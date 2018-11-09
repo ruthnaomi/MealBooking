@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/image_logo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_plate"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/image_logo_layout">
+
+                <LinearLayout
+                    android:id="@+id/firstLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/secondView"
+                    android:orientation="vertical"
+                    android:layout_toStartOf="@+id/secondView">
+
+                    <View
+                        android:layout_margin="20dp"
+                        android:id="@+id/firstView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/secondView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textSize="@dimen/slide_title"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:id="@+id/thirdLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/secondView"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/secondView">
+
+                    <View
+                        android:id="@+id/thirdView"
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/signUpDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_below="@id/buttonsLayout"
+                android:textSize="@dimen/slide_desc"
+                android:text="@string/join_m_booking_absolutely_for_free"/>
+
+            <RelativeLayout
+                android:id="@+id/editTextFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signUpDesc">
+
+                <RelativeLayout
+                    android:id="@+id/personName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <LinearLayout
+                        android:id="@+id/firstLayoutField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/secondView2"
+                        android:orientation="vertical"
+                        android:layout_toStartOf="@+id/secondView2">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/fName"
+                                android:inputType="textPersonName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/first_name" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/secondView2"
+                        android:layout_width="2dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <LinearLayout
+                        android:id="@+id/thirdLayoutField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/secondView2"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_toEndOf="@+id/secondView2">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/sname"
+                                android:inputType="textPersonName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/second_name" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/formClassDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/personName">
+
+                    <LinearLayout
+                        android:id="@+id/firstLayoutFieldForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/secondView3"
+                        android:orientation="vertical"
+                        android:layout_toStartOf="@+id/secondView3">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/email"
+                                android:inputType="textEmailAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/secondView3"
+                        android:layout_width="2dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <LinearLayout
+                        android:id="@+id/thirdLayoutFieldForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/secondView3"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@+id/secondView3">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/phone"
+                                android:inputType="phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/phone" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/admNo"
+                    android:layout_below="@+id/formClassDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/username"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/username" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/county"
+                    android:layout_below="@+id/admNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/password"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_below="@+id/county"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/custom_btn"
+                    android:textColor="@color/white"
+                    android:onClick="proceed"
+                    android:layout_width="match_parent"
+                    android:text="@string/create_account"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/alreadyHaveAccount"
+                    android:layout_below="@+id/register"
+                    android:text="@string/already_have_an_account_login"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:onClick="exists"
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

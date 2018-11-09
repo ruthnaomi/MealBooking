@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/custom_gilanis_primary</item>
+        <item name="colorPrimaryDark">@color/custom_gilanis_primary_dark</item>
+        <item name="colorAccent">@color/custom_gilanis_accent</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/custom_gilanis_primary</item>
+        <item name="colorPrimaryDark">@color/custom_gilanis_primary_dark</item>
+        <item name="colorAccent">@color/custom_gilanis_accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_Gilanis" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/custom_gilanis_primary</item>
+        <item name="colorPrimaryDark">@color/custom_gilanis_primary_dark</item>
+        <item name="colorAccent">@color/custom_gilanis_accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CardView.SS">
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<style name="FullscreenTheme" parent="Theme_Gilanis">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>-->
+
+    <style name="NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme_Gilanis.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme_Gilanis.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

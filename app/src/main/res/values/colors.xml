@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Default Colors-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbarColor">#eeee</color>
+    <color name="holo_gray">#717171</color>
+    <color name="orange">#f57c00</color>
+    <color name="semi_transparent">#7e000000</color>
+    <color name="white">#FFF</color>
+
+    <!--App used colors-->
+    <color name="primary">#FF9800</color>
+    <color name="primary_dark">#F57C00</color>
+    <color name="primary_light">#FFE0B2</color>
+    <color name="accent">#FFC107</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!--Gilanis dedicated colors-->
+    <color name="custom_gilanis_primary">#F44336</color>
+    <color name="custom_gilanis_primary_dark">#D32F2F</color>
+    <color name="custom_gilanis_primary_light">#FFCDD2</color>
+    <color name="custom_gilanis_accent">#FF5722</color>
+    <color name="custom_gilanis_primary_text">#212121</color>
+    <color name="custom_gilanis_secondary_text">#757575</color>
+    <color name="custom_gilanis_icons">#FFFFFF</color>
+    <color name="custom_gilanis_divider">#BDBDBD</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
